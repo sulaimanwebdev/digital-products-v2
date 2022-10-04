@@ -1,11 +1,14 @@
 import React from 'react'
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import {Helmet} from "react-helmet";
 
 const Impressum = () => {
   return (
     <>
-    
+      <Helmet>
+       <title>Impressum</title>
+      </Helmet>
     <div className="h-screen flex flex-col body">
       <section className="header-container">
       

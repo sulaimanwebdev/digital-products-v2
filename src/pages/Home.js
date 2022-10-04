@@ -2,10 +2,15 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Slider1 from "../components/Slider1";
 import Slider2 from "../components/Slider2";
+import {Helmet} from "react-helmet";
 
 function Home() {
     return (
      <>
+      <Helmet>
+       <title>Digitale Akten ganz einfach organisieren und verwalten</title>
+      </Helmet>
+
       <div className="h-screen flex flex-col body">
       <section className="header-container">
       <Header/>

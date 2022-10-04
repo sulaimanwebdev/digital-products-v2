@@ -8,6 +8,7 @@ const Termin = () => {
     <>
     <Helmet>
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <title>Aktenplatz.de Demo-Termin</title>
     </Helmet>
 
     <div className="h-screen flex flex-col body">

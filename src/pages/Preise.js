@@ -1,9 +1,14 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import {Helmet} from "react-helmet";
 
 function Preise() {
     return (
      <>
+      <Helmet>
+       <title>Aktenplatz.de Preise</title>
+      </Helmet>
+      
       <div className="h-screen flex flex-col body">
       <section className="header-container">
       

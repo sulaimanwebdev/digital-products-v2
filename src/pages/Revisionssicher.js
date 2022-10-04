@@ -1,10 +1,14 @@
 import React from 'react'
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import {Helmet} from "react-helmet";
 
 const Revisionssicher = () => {
   return (
     <>
+    <Helmet>
+       <title>Archivierung - automatisch und rechtssicher</title>
+    </Helmet>
     <div className="h-screen flex flex-col body">
       <section className="header-container">
       
