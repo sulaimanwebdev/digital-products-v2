@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 const Header = () => {
 
@@ -44,7 +45,7 @@ const Header = () => {
                       <a data-scroll href="index.html#Vertrauen">Vertrauen</a>
                   </li>
                   <li>
-                      <a href="Preise.html">Preise</a>
+                      <Link to="/preise">Preise</Link>
                   </li>
                   <li>
                       <a href="Steuerkanzleien.html">Steuerberater</a>
@@ -86,7 +87,7 @@ const Header = () => {
                           <a data-scroll href="index.html#Funktionen">Funktionen</a>
                       </li>
                       <li>
-                          <a href="Preise.html">Preise</a>
+                          <Link to="/preise">Preise</Link>
                       </li>
                       <li style={{position: "relative", width: '150px'}}>
                           <details className="menu-details">
