@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Slider1 from "../components/Slider1";
 
 function Home() {
     return (
@@ -97,36 +98,7 @@ function Home() {
       </section>
       <main className="main container mx-auto pt-10 flex-1">
           <section className="sections section-logos">
-              <div className="swiper mySwiper">
-                  <div className="swiper-wrapper logos">
-                      <div className="swiper-slide logo">
-                          <a href="https://www.backs-it.de" target="_blank" rel="noreferrer">
-                              <img src="/img/backs-it-logo-claim.svg" width="180px" alt=""/></a>
-                      </div>
-  
-                      <div className="swiper-slide logo">
-                          <a href="https://kfo-exner-wenzel.de/" target="_blank" rel="noreferrer"><img width="180px"
-                                  src="/img/logo_wenzel.png" alt=""/></a>
-                      </div>
-  
-                      <div className="swiper-slide logo">
-                          <a href="https://3raum-architekten.de/" width="180px" target="_blank" rel="noreferrer"><img
-                                  src="/img/3raum_logo.png" width="180px" alt=""/></a>
-                      </div>
-  
-                      <div className="swiper-slide logo">
-                          <a href="https://www.aktuell-verein.de/lohnsteuerhilfe/ladewig-loehne" target="_blank" rel="noreferrer"><img
-                                  src="/img/logo_alh.png" width="180px" alt=""/></a>
-                      </div>
-                      <div className="swiper-slide logo">
-                          <a href="http://www.kremer-vt.de" target="_blank" rel="noreferrer"><img
-                                  src="/img/kremer-veranstaltungstechnik-logo.gif" width="180px" alt=""/></a>
-                      </div>
-                      <div className="swiper-slide logo">
-                          <a href="/#" target="_blank" rel="noreferrer"><img src="/img/Logofoxhub.png" width="180px" alt=""/></a>
-                      </div>
-                  </div>
-              </div>
+             <Slider1/>
           </section>
   
           <section className="sections section-features">
@@ -160,7 +132,7 @@ function Home() {
                   <div className="feature">
                       <div className="feature-image hidden xl:flex 2xl:flex">
                           <img src="/img/animations/animation_Attach.gif"
-                              style={{width: '450px', maxHeight: '400px', borderRadius: '30px'}} alt=""/>
+                              style={{width: '640px', maxHeight: '400px', borderRadius: '30px'}} alt=""/>
                       </div>
                       <div className="feature-content">
                           <h4 className="feature-title">Alle Inhalte Ihrer digitalen Akten auf einen Blick</h4>
