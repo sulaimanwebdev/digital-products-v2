@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Slider1 from "../components/Slider1";
+import Slider2 from "../components/Slider2";
 
 function Home() {
     return (
@@ -271,69 +272,8 @@ function Home() {
                   <h4 className="heading-title" id="Vertrauen">Vertrauensvoll und Sicher</h4>
                   <h3 className="heading-section-title">Unsere Versicherungen und Partner</h3>
               </div>
-              <div className="swiper mySwiper-review">
-                  <div className="swiper-wrapper reviews">
-                      <div className="swiper-slide review">
-                          <a className="review-logo" href="https://www.globalsign.com/" target="__blank">
-                              <img name="ss_imgTag" border="0"
-                                  src="//ssif1.globalsign.com/SiteSeal/siteSeal/siteSeal/siteSealImage.do?p1=www.globalsign.com&amp;p2=SZ125-50&amp;p3=image&amp;p4=en&amp;p5=V0023&amp;p6=S001&amp;p7=https&amp;deterDn="
-                                  alt="Please click to see profile."  galleryimg="no"/>
-                          </a>
-                          {/* <!-- <div className="review-rating">
-                              4.5/5
-                          </div>
-                          <div className="review-star">
-                              <img src="/img/Ratingstar.png" alt="">
-                          </div> --> */}
-                      </div>
-                      <div className="swiper-slide review">
-                          <a className="review-logo" href="https://www.it-recht-kanzlei.de/" target="__blank">
-                              <img src="https://www.it-recht-kanzlei.de/logo/Logo_Juristisch_betreut_durch_IT-Recht_Kanzlei.png?i=45e5f-2c5e1-39c6-907c-1"
-                                  alt="Vertreten durch die IT-Recht Kanzlei"/>
-                          </a>
-                          {/* <!-- <div className="review-rating">
-                              4.3/5
-                          </div>
-                          <div className="review-star">
-                              <img src="/img/Ratingstar.png" alt="">
-                          </div> --> */}
-                      </div>
-                      <div className="swiper-slide review">
-                          <a className="review-logo" href="https://www.fairness-im-handel.de/" target="__blank">
-                              <img src="/img/fairness_handle.png" alt="fairness im handel"/>
-                          </a>
-                          {/* <!-- <div className="review-rating">
-                              4.3/5
-                          </div>
-                          <div className="review-star">
-                              <img src="/img/Ratingstar.png" alt="">
-                          </div> --> */}
-                      </div>
-                      <div className="swiper-slide review">
-                          <a className="review-logo" href="https://www.german-ma.de/" target="__blank">
-                              <img src="/img/made_in_germany.png" alt="made in germany"/>
-                          </a>
-                          {/* <!-- <div className="review-rating">
-                              4.5/5
-                          </div>
-                          <div className="review-star">
-                              <img src="/img/Ratingstar.png" alt="">
-                          </div> --> */}
-                      </div>
-                      <div className="swiper-slide review">
-                          <a className="review-logo" href="https://www.lvm.de/" target="__blank">
-                              <img src="/img/lvm.png" alt="lvn"/>
-                          </a>
-                          {/* <!-- <div className="review-rating">
-                              4.5/5
-                          </div>
-                          <div className="review-star">
-                              <img src="/img/Ratingstar.png" alt="">
-                          </div> --> */}
-                      </div>
-                  </div>
-                  {/* <!-- <div className="swiper-button-next"></div> -->
-                  <!-- <div className="swiper-button-prev"></div> --> */}
+              <div className="mySwiper-review">
+                  <Slider2/>
               </div>
           </section>
       </main>
