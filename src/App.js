@@ -4,6 +4,7 @@ import Kieferorthopaedie from "./pages/Kieferorthopaedie";
 import Preise from './pages/Preise';
 import Revisionssicher from "./pages/Revisionssicher";
 import Steuerkanzleien from "./pages/Steuerkanzleien";
+import Termin from "./pages/Termin";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/steuerkanzleien" element={<Steuerkanzleien/>} />
       <Route path="/kieferorthopaedie" element={<Kieferorthopaedie/>} />
       <Route path="/revisionssicher" element={<Revisionssicher/>} />
+      <Route path="/termin" element={<Termin/>} />
     </Routes>
     </BrowserRouter>
    </>

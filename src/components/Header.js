@@ -57,7 +57,7 @@ const Header = () => {
                       <Link to="/revisionssicher">Revisionssicheres Archiv</Link>
                   </li>
                   <li>
-                      <a href="Termin.html">Demo-Termin</a>
+                      <Link to="/termin">Demo-Termin</Link>
                   </li>
               </ul>
               <a href="https://app.Aktenplatz.de/register" target="_blank" rel="noreferrer" className="btn-primary">
@@ -102,7 +102,7 @@ const Header = () => {
                          <Link to="/revisionssicher">Revisionssicheres Archiv</Link>
                       </li>
                       <li>
-                          <a href="Termin.html">Demo-Termin</a>
+                      <Link to="/termin">Demo-Termin</Link>
                       </li>
                   </ul>
                   <a href="https://app.Aktenplatz.de/register" target="_blank" rel="noreferrer" className="btn-primary">
