@@ -23,10 +23,10 @@ const Header = () => {
     <div className={`menu-mobile ${menuMobile}`}>
           <div className="block w-full h-full relative">
               <div className="flex flex-none" style={{zIndex: "2"}}>
-                  <a href="/" className="flex flex-row items-center">
+                  <Link to="/" className="flex flex-row items-center">
                       <img src="/img/logo.png" alt="logo" className="logo" />
                       <span className="logo-title">Aktenplatz</span>
-                  </a>
+                  </Link>
               </div>
               <div onClick={onCloseMenu} className="menu-close-icon">
                   <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,10 +39,10 @@ const Header = () => {
                       <a data-scroll href="#Funktionen">Funktionen</a>
                   </li>
                   <li>
-                      <a data-scroll href="index.html#Vorteile">Vorteile</a>
+                      <a data-scroll href="#Vorteile">Vorteile</a>
                   </li>
                   <li>
-                      <a data-scroll href="index.html#Vertrauen">Vertrauen</a>
+                      <a data-scroll href="#Vertrauen">Vertrauen</a>
                   </li>
                   <li>
                       <Link to="/preise">Preise</Link>
@@ -67,10 +67,10 @@ const Header = () => {
       </div>
           <header className="header">
               <div className="flex flex-none" style={{zIndex: "2"}}>
-                  <a href="/" className="flex flex-row items-center">
+                  <Link to="/" className="flex flex-row items-center">
                       <img src="/img/logo.png" alt="logo" className="logo" />
                       <span className="logo-title">Aktenplatz</span>
-                  </a>
+                  </Link>
               </div>
               <div className="flex flex-row flex-1 justify-end items-center sm:flex lg:flex xl:hidden">
                   <div onClick={onOpenMenu} className="menu-icon">
