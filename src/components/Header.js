@@ -54,7 +54,7 @@ const Header = () => {
                       <Link to="/kieferorthopaedie">Kieferorthopädie</Link>
                   </li>
                   <li>
-                      <a href="Revisionssicher.html">Revisionssicheres Archiv</a>
+                      <Link to="/revisionssicher">Revisionssicheres Archiv</Link>
                   </li>
                   <li>
                       <a href="Termin.html">Demo-Termin</a>
@@ -99,7 +99,7 @@ const Header = () => {
                           </details>
                       </li>
                       <li>
-                          <a href="Revisionssicher.html">Revisionssicheres Archiv</a>
+                         <Link to="/revisionssicher">Revisionssicheres Archiv</Link>
                       </li>
                       <li>
                           <a href="Termin.html">Demo-Termin</a>
