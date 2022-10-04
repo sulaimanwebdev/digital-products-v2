@@ -89,7 +89,7 @@ const Header = () => {
                       <li>
                           <Link to="/preise">Preise</Link>
                       </li>
-                      <li style={{position: "relative", width: '150px'}}>
+                      <li className='z-50' style={{position: "relative", width: '150px'}}>
                           <details className="menu-details">
                               <summary>Zielgruppen</summary>
                               <ul>
