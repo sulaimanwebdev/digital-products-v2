@@ -51,7 +51,7 @@ const Header = () => {
                       <Link to="/steuerkanzleien">Steuerberater</Link>
                   </li>
                   <li>
-                      <a href="Kieferorthopaedie.html">Kieferorthopädie</a>
+                      <Link to="/kieferorthopaedie">Kieferorthopädie</Link>
                   </li>
                   <li>
                       <a href="Revisionssicher.html">Revisionssicheres Archiv</a>
@@ -94,7 +94,7 @@ const Header = () => {
                               <summary>Zielgruppen</summary>
                               <ul>
                                   <li><Link to="/steuerkanzleien">Steuerberater</Link></li>
-                                  <li><a href="Kieferorthopaedie.html">Kieferorthopädie</a></li>
+                                  <li><Link to="/kieferorthopaedie">Kieferorthopädie</Link></li>
                               </ul>
                           </details>
                       </li>
