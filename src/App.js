@@ -1,5 +1,6 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from './pages/Home';
+import Impressum from "./pages/Impressum";
 import Kieferorthopaedie from "./pages/Kieferorthopaedie";
 import Preise from './pages/Preise';
 import Revisionssicher from "./pages/Revisionssicher";
@@ -17,6 +18,7 @@ function App() {
       <Route path="/kieferorthopaedie" element={<Kieferorthopaedie/>} />
       <Route path="/revisionssicher" element={<Revisionssicher/>} />
       <Route path="/termin" element={<Termin/>} />
+      <Route path="/impressum" element={<Impressum/>} />
     </Routes>
     </BrowserRouter>
    </>

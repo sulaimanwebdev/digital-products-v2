@@ -104,7 +104,7 @@ function Home() {
   
           <section className="sections section-features">
               <div className="heading-container">
-                  {/* <h4 className="heading-title" id="Funktionen"></h4> */}
+                  <h4 className="heading-title" id="Funktionen"></h4>
                   {/* <!-- <h3 className="heading-section-title">Aktenplatz in vier Schritten</h3> --> */}
               </div>
               <div className="features">

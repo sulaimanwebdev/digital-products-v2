@@ -36,7 +36,7 @@ const Header = () => {
               </div>
               <ul  className="main-mobile-menu" id="main-mobile-menu">
                   <li>
-                      <a data-scroll href="index.html#Funktionen">Funktionen</a>
+                      <a data-scroll href="#Funktionen">Funktionen</a>
                   </li>
                   <li>
                       <a data-scroll href="index.html#Vorteile">Vorteile</a>
@@ -84,7 +84,7 @@ const Header = () => {
               <div className="hidden flex-row flex-1 justify-end items-center sm:hidden md:hidden xl:flex">
                   <ul className="main-menu">
                       <li>
-                          <a data-scroll href="index.html#Funktionen">Funktionen</a>
+                          <a data-scroll href="#Funktionen">Funktionen</a>
                       </li>
                       <li>
                           <Link to="/preise">Preise</Link>
