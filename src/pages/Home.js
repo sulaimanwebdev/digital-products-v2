@@ -4,6 +4,7 @@ import Slider1 from "../components/Slider1";
 import Slider2 from "../components/Slider2";
 import {Helmet} from "react-helmet";
 import {Link} from 'react-router-dom'
+import Reviews from "../components/Reviews";
 
 function Home() {
     return (
@@ -45,60 +46,7 @@ function Home() {
                           className="banner-logo max-h-[512px] transform lg:translate-y-[0px]" />
                   </a>
   
-                  {/* <!-- <div
-                      className="w-[90%] sm:w-[400px] gap-5 single-widget  px-4 h-[138px] absolute -bottom-10 right-1/2 transform md:translate-x-0 translate-x-1/2 md:right-0 bg-white rounded-[24px] flex items-center justify-start">
-                      <div className="flex items-center justify-center flex-col ">
-                          <img src="/img//image1.svg" alt="profile"
-                              className="transform -translate-y-10 w-[250px] sm:w-[300px]">
-                          <div
-                              className="text-[16px] text-center leading-tight font-bold text-orange transform -translate-y-7">
-                              Julia Masche</div>
-                      </div>
-                      <p className="text-[15px] opacity-80">“Mit Aktenplatz managen wir unsere Bauprojekte und legen
-                          Unterlagen und Kontakte zentral ab.“
-                      </p>
-                  </div>
-  
-                  --> */}
-  
-  
-                  <div
-                      className="w-[90%] sm:w-[400px] hide-widget gap-5 single-widget  px-4 h-[138px] absolute -bottom-10 right-1/2 transform md:translate-x-0 translate-x-1/2 md:right-0 bg-white rounded-[24px] flex items-center justify-start">
-                      <div className="flex items-center justify-center flex-col ">
-                          <img src="/img//ladewig_round.png" alt="profile"
-                              className="transform -translate-y-10 w-[350px] sm:w-[360px]" />
-                          <div
-                              className="text-[16px] text-center leading-tight font-bold text-orange transform -translate-y-7">
-                              Bettina Ladewig</div>
-                      </div>
-                      <p className="text-[15px] opacity-80">“Mit Aktenplatz verpassen wir keine wichtige Fristen unserer
-                          Mandanten mehr. Wir behalten Überblick über
-                          Wiedervorlagen und vereinbarte Termine“
-  
-                      </p>
-                  </div>
-  
-  
-  
-  
-  
-                  <div
-                      className="w-[90%] sm:w-[400px] hide-widget gap-5 single-widget  px-4 h-[138px] absolute -bottom-10 right-1/2 transform md:translate-x-0 translate-x-1/2 md:right-0 bg-white rounded-[24px] flex items-center justify-start">
-                      <div className="flex items-center justify-center flex-col ">
-                          <img src="/img//wenzel_round.png" alt="profile"
-                              className="transform -translate-y-10 w-[270px] sm:w-[350px]"/>
-                          <div
-                              className="text-[16px] text-center leading-tight font-bold text-orange transform -translate-y-7">
-                              Dr. Wenzel</div>
-                      </div>
-                      <p className="text-[15px] opacity-80">“Mit Aktenplatz wissen meine Backoffice-Mitarbeiter und ich, um
-                          welche Akten (Patienten) wir uns dringend kümmern müssen.“
-  
-                      </p>
-                  </div>
-  
-  
-  
+                  <Reviews/>
   
               </div>
           </div>
