@@ -14,19 +14,19 @@ const Steuerkanzleien = () => {
       
       <Header/>
          
-      <div className="banner-section-tax container mx-auto mt-10 mb-32">
-            <div className="banner-col-tax col-1 xl:ml-[60px] 2xl:ml-[190px]">
-                <div className="banner-col-1-content-tax">
-                    <h1 className="banner-title-tax">Ihr Weg zur digitalen Kanzlei</h1>
-                    <p className="banner-description-tax">Haben Sie Probleme die richtigen Unterlagen stets vollständig vor
+      <div className="banner-section-tax flex flex-col space-y-5 lg:flex-row container mx-auto mt-10 mb-32">
+            <div className="banner-col-tax flex flex-1 flex-col items-center text-center pt-10 lg:items-start lg:pt-40 lg:text-left col-1 xl:ml-[60px] 2xl:ml-[190px]">
+                <div className="banner-col-1-content-tax px-4 lg:max-w-lg">
+                    <h1 className="banner-title-tax pt-2 pb-3 text-4xl font-bold max-w-xs mx-auto lg:text-5xl lg:max-w-none lg:pb-6 lg:leading-tight">Ihr Weg zur digitalen Kanzlei</h1>
+                    <p className="banner-description-tax text-[17px] opacity-80  leading">Haben Sie Probleme die richtigen Unterlagen stets vollständig vor
                         sich
                         zu haben? Führt ein Mitarbeiter Ausfall zu einem regelmäßigen Stillstand? Bleiben die
                         gewünschten Vorteile der Digitalisierung bisher aus?</p>
 
                 </div>
             </div>
-            <div className="banner-col col-2-tax  xl:mr-[60px] 2xl:mr-[190px] inline-block self-end w-full h-[300px]" >
-                {/* <!-- <img src="/img/tax-page-image.svg" alt="logo" className="tax-image"> --> */}
+            <div className="banner-col col-2-tax flex flex-row flex-1 justify-center pt-10 lg:pt-0 xl:mr-[60px] 2xl:mr-[190px] self-end w-full h-[300px]" >
+                {/* <!-- <img src="/img/tax-page-image.svg" alt="logo" className="tax-image max-w-xs lg:max-w-[500px]"> --> */}
                 {/* <!-- <embed src="https://www.youtube.com/embed/Y3Wv2AoGiv0" wmode="transparent" type="video/mp4" width="100%"
                     height="300px" allow="autoplay; encrypted-media; picture-in-picture" allowFullScreen
                     title="Keyboard Cat"> --> */}

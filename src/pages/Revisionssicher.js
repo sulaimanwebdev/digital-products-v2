@@ -16,18 +16,18 @@ const Revisionssicher = () => {
           
       {/* <!-- START --> */}
 
-<div className="banner-section-tax container mx-auto mt-10 mb-32">
-    <div className="banner-col-tax col-1 xl:ml-[60px] 2xl:ml-[190px]">
-        <div className="banner-col-1-content-tax">
-            <h1 className="banner-title-tax">Archivierung - automatisch und rechtssicher</h1>
-            <p className="banner-description-tax">Die Rechtslage für Unternehmen in Deutschland ist eindeutig: Die
+<div className="banner-section-tax flex flex-col space-y-5 lg:flex-row container mx-auto mt-10 mb-32">
+    <div className="banner-col-tax flex flex-1 flex-col items-center text-center pt-10 lg:items-start lg:pt-40 lg:text-left col-1 xl:ml-[60px] 2xl:ml-[190px]">
+        <div className="banner-col-1-content-tax px-4 lg:max-w-lg">
+            <h1 className="banner-title-tax pt-2 pb-3 text-4xl font-bold max-w-xs mx-auto lg:text-5xl lg:max-w-none lg:pb-6 lg:leading-tight">Archivierung - automatisch und rechtssicher</h1>
+            <p className="banner-description-tax text-[17px] opacity-80  leading-8">Die Rechtslage für Unternehmen in Deutschland ist eindeutig: Die
                 Sicherung Ihrer Geschäftsdaten auf Festplatten oder einfachen Cloud-Speichern reicht nicht aus,
                 um die
                 gesetzlichen Vorgaben zu erfüllen. Daten müssen in einem unveränderlichen Speicher abgelegt werden.</p>
 
         </div>
     </div>
-    <div className="banner-col col-2-tax  xl:mr-[60px] 2xl:mr-[190px] inline-block self-end w-full h-[300px]">
+    <div className="banner-col col-2-tax flex flex-row flex-1 justify-center pt-10 lg:pt-0 xl:mr-[60px] 2xl:mr-[190px] self-end w-full h-[300px]">
         <iframe width="100%" height="315" src="https://www.youtube.com/embed/MakohDl-Uok?controls=0"
             title="YouTube video player" frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
