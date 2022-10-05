@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Slider1 from "../components/Slider1";
 import Slider2 from "../components/Slider2";
 import {Helmet} from "react-helmet";
+import {Link} from 'react-router-dom'
 
 function Home() {
     return (
@@ -267,9 +268,9 @@ function Home() {
               </div>
           </section>
           <div style={{textAlign: 'center'}}>
-              <a href="./Preise.html" className="btn-primary">
+              <Link to="/preise" className="btn-primary">
                   Alle Funktionen
-              </a>
+              </Link>
           </div>
   
           <section className=" sections section-reviews">

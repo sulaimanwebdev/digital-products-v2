@@ -42,7 +42,7 @@ const Impressum = () => {
                     </div>
                     <div className="impressum-details">
                         <p>Plattform der EU-Kommission zur Online-Streitbeilegung: <a href="https://ec.europa.eu/odr"
-                                target="_blank">https://ec.europa.eu/odr</a></p>
+                                target="_blank" rel="noreferrer">https://ec.europa.eu/odr</a></p>
                     </div>
                     <div className="impressum-details impressum-footer">
                         <div className="impressum-footer-image">
@@ -51,7 +51,7 @@ const Impressum = () => {
                         <div className="impressum-footer-details">
                             <p>Mitglied der Initiative "Fairness im Handel".</p>
                             <p>Nahere Informationen: <a href="https://www.fairness-im-handel.de"
-                                    target="_blank">https://www.fairness-im-handel.de</a></p>
+                                    target="_blank" rel="noreferrer">https://www.fairness-im-handel.de</a></p>
                         </div>
                     </div>
                 </div>

@@ -177,7 +177,7 @@ const Footer = () => {
                           <a href="https://images.aktenplatz.de/Hosting-AGB_B2B.html" target="_blank" rel="noreferrer">AGB</a>
                       </li>
                       <li>
-                          <a href="./Impressum.html">Impressum</a>
+                          <Link to="/impressum">Impressum</Link>
                       </li>
                       <li>
                           <a href="http://status.aktenplatz.de" target="_blank" rel="noreferrer">Status</a>
