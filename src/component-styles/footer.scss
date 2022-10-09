@@ -14,3 +14,9 @@
 .footer-socials {
     @apply flex space-x-4 justify-center;
 }
+
+@media (min-height: 1100px){
+    .footerForShortPages{
+        @apply absolute bottom-0 left-0 w-full
+    }
+}

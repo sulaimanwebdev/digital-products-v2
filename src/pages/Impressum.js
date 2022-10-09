@@ -61,7 +61,7 @@ const Impressum = () => {
 
       {/* <!-- END --> */}
 
-      <Footer/>
+      <Footer shortPage={true}/>
       </section>
 
       </div>

@@ -1,10 +1,10 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const Footer = () => {
+const Footer = ({shortPage}) => {
   return (
     <>
-    <div className="footerCont">
+    <div className={`footerCont ${shortPage ? "footerForShortPages" : ""}`}>
           <div
               className="hidden lg:flex container mx-auto flex-col space-y-10 flex-wrap lg:flex-row lg:space-x-10 lg:space-y-0">
               <div className="flex-1 flex items-center">

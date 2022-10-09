@@ -62,7 +62,7 @@ const Termin = () => {
 
 
 
-      <Footer/>
+      <Footer shortPage={true}/>
       </section>
 
       </div>
