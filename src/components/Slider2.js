@@ -40,19 +40,17 @@ const Slider2 = () => {
 
      <SwiperSlide  className="review" >
      <div>
-     <a className="review-logo" href="https://www.globalsign.com/" target="__blank">
-                              <img name="ss_imgTag" border="0"
-                                  src="//ssif1.globalsign.com/SiteSeal/siteSeal/siteSeal/siteSealImage.do?p1=www.globalsign.com&amp;p2=SZ125-50&amp;p3=image&amp;p4=en&amp;p5=V0023&amp;p6=S001&amp;p7=https&amp;deterDn="
-                                  alt="Please click to see profile."  galleryimg="no"/>
-                          </a>
+     <a class="review-logo" href="https://www.globalsign.com/" target="__blank">
+     <img src="./img/img1.png" alt="Please click to see profile."/>
+
+                        </a>
      </div>
      </SwiperSlide>
 
      <SwiperSlide  className="review" >
      <div>
      <a className="review-logo" href="https://www.it-recht-kanzlei.de/" target="__blank">
-                              <img src="https://www.it-recht-kanzlei.de/logo/Logo_Juristisch_betreut_durch_IT-Recht_Kanzlei.png?i=45e5f-2c5e1-39c6-907c-1"
-                                  alt="Vertreten durch die IT-Recht Kanzlei"/>
+     <img src="./img/img2.png" alt="Vertreten durch die IT-Recht Kanzlei"/>
                                   </a>
      </div>
      </SwiperSlide>

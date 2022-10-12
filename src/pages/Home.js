@@ -5,8 +5,16 @@ import Slider2 from "../components/Slider2";
 import {Helmet} from "react-helmet";
 import {Link} from 'react-router-dom'
 import Reviews from "../components/Reviews";
+import { useEffect } from "react";
+import { useLocation } from "react-router";
 
 function Home() {
+
+    const location = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
+
     return (
      <>
       <Helmet>

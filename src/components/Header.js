@@ -17,13 +17,17 @@ const Header = () => {
         setmenuMobile('hidden')
       };
 
+      let addScrollBar = () =>{
+        document.body.classList.add('overflow-auto');
+        document.body.classList.remove('overflow-hidden');
+      }
 
   return (
     <>
     <div className={`menu-mobile ${menuMobile}`}>
           <div className="block w-full h-full relative">
               <div className="flex flex-none" style={{zIndex: "2"}}>
-                  <Link to="/" className="flex flex-row items-center">
+                  <Link to="/" onClick={addScrollBar} className="flex flex-row items-center">
                       <img src="/img/logo.png" alt="logo" className="logo" />
                       <span className="logo-title">Aktenplatz</span>
                   </Link>
@@ -36,38 +40,38 @@ const Header = () => {
               </div>
               <ul  className="main-mobile-menu" id="main-mobile-menu">
                   <li>
-                     <a data-scroll href="/#Funktionen">Funktionen</a>
+                     <a onClick={addScrollBar} data-scroll href="/#Funktionen">Funktionen</a>
                   </li>
                   <li>
-                      <a data-scroll href="#Vorteile">Vorteile</a>
+                      <a onClick={addScrollBar} data-scroll href="#Vorteile">Vorteile</a>
                   </li>
                   <li>
-                      <a data-scroll href="#Vertrauen">Vertrauen</a>
+                      <a onClick={addScrollBar} data-scroll href="#Vertrauen">Vertrauen</a>
                   </li>
                   <li>
-                      <Link to="/preise">Preise</Link>
+                      <Link onClick={addScrollBar} to="/preise">Preise</Link>
                   </li>
                   <li>
-                      <Link to="/steuerkanzleien">Steuerberater</Link>
+                      <Link onClick={addScrollBar} to="/steuerkanzleien">Steuerberater</Link>
                   </li>
                   <li>
-                      <Link to="/kieferorthopaedie">Kieferorthopädie</Link>
+                      <Link onClick={addScrollBar} to="/kieferorthopaedie">Kieferorthopädie</Link>
                   </li>
                   <li>
-                      <Link to="/revisionssicher">Revisionssicheres Archiv</Link>
+                      <Link onClick={addScrollBar} to="/revisionssicher">Revisionssicheres Archiv</Link>
                   </li>
                   <li>
-                      <Link to="/termin">Demo-Termin</Link>
+                      <Link onClick={addScrollBar} to="/termin">Demo-Termin</Link>
                   </li>
               </ul>
-              <a href="https://app.Aktenplatz.de/register" target="_blank" rel="noreferrer" className="btn-primary">
+              <a onClick={addScrollBar} href="https://app.Aktenplatz.de/register" target="_blank" rel="noreferrer" className="btn-primary">
                   Kostenlos testen
               </a>
           </div>
       </div>
           <header className="header">
               <div className="flex flex-none" style={{zIndex: "2"}}>
-                  <Link to="/" className="flex flex-row items-center">
+                  <Link onClick={addScrollBar} to="/" className="flex flex-row items-center">
                       <img src="/img/logo.png" alt="logo" className="logo" />
                       <span className="logo-title">Aktenplatz</span>
                   </Link>
@@ -84,28 +88,28 @@ const Header = () => {
               <div className="hidden flex-row flex-1 justify-end items-center sm:hidden md:hidden xl:flex">
                   <ul className="main-menu">
                       <li>
-                        <a data-scroll href="/#Funktionen">Funktionen</a>
+                        <a onClick={addScrollBar} data-scroll href="/#Funktionen">Funktionen</a>
                       </li>
                       <li>
-                          <Link to="/preise">Preise</Link>
+                          <Link onClick={addScrollBar} to="/preise">Preise</Link>
                       </li>
                       <li className='z-50' style={{position: "relative", width: '150px'}}>
                           <details className="menu-details">
                               <summary>Zielgruppen</summary>
                               <ul>
-                                  <li><Link to="/steuerkanzleien">Steuerberater</Link></li>
-                                  <li><Link to="/kieferorthopaedie">Kieferorthopädie</Link></li>
+                                  <li><Link onClick={addScrollBar} to="/steuerkanzleien">Steuerberater</Link></li>
+                                  <li><Link onClick={addScrollBar} to="/kieferorthopaedie">Kieferorthopädie</Link></li>
                               </ul>
                           </details>
                       </li>
                       <li>
-                         <Link to="/revisionssicher">Revisionssicheres Archiv</Link>
+                         <Link onClick={addScrollBar} to="/revisionssicher">Revisionssicheres Archiv</Link>
                       </li>
                       <li>
-                      <Link to="/termin">Demo-Termin</Link>
+                      <Link onClick={addScrollBar} to="/termin">Demo-Termin</Link>
                       </li>
                   </ul>
-                  <a href="https://app.Aktenplatz.de/register" target="_blank" rel="noreferrer" className="btn-primary">
+                  <a onClick={addScrollBar} href="https://app.Aktenplatz.de/register" target="_blank" rel="noreferrer" className="btn-primary">
                       Kostenlos testen
                   </a>
               </div>

@@ -2,13 +2,19 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 const Footer = ({shortPage}) => {
+
+    let addScrollBar = () =>{
+        document.body.classList.add('overflow-auto');
+        document.body.classList.remove('overflow-hidden');
+      }
+
   return (
     <>
     <div className={`footerCont ${shortPage ? "footerForShortPages" : ""}`}>
           <div
               className="hidden lg:flex container mx-auto flex-col space-y-10 flex-wrap lg:flex-row lg:space-x-10 lg:space-y-0">
               <div className="flex-1 flex items-center">
-                  <a href="/" className="logo-container">
+                  <a onClick={addScrollBar} href="/" className="logo-container">
                       <img src="/img/logo.png" alt="logo" className="logo"/>
                       <span className="logo-title">Aktenplatz</span>
                   </a>
@@ -29,7 +35,7 @@ const Footer = ({shortPage}) => {
                           <a href="https://images.aktenplatz.de/Hosting-AGB_B2B.html" target="_blank" rel="noreferrer">AGB</a>
                       </li>
                       <li>
-                          <Link to="/impressum">Impressum</Link>
+                          <Link onClick={addScrollBar} to="/impressum">Impressum</Link>
                       </li>
                       <li>
                           <a href="http://status.aktenplatz.de" target="_blank" rel="noreferrer">Status</a>
@@ -99,7 +105,7 @@ const Footer = ({shortPage}) => {
               className="flex lg:hidden container mx-auto flex-col space-y-10 flex-wrap lg:flex-row lg:space-x-10 lg:space-y-0">
               <div className="flex flex-1 flex-wrap">
                   <div className="flex-1 flex items-center">
-                      <a href="/" className="logo-container">
+                      <a onClick={addScrollBar} href="/" className="logo-container">
                           <img src="/img/logo.png" alt="logo" className="logo"/>
                           <span className="logo-title">Aktenplatz</span>
                       </a>
@@ -177,7 +183,7 @@ const Footer = ({shortPage}) => {
                           <a href="https://images.aktenplatz.de/Hosting-AGB_B2B.html" target="_blank" rel="noreferrer">AGB</a>
                       </li>
                       <li>
-                          <Link to="/impressum">Impressum</Link>
+                          <Link onClick={addScrollBar} to="/impressum">Impressum</Link>
                       </li>
                       <li>
                           <a href="http://status.aktenplatz.de" target="_blank" rel="noreferrer">Status</a>

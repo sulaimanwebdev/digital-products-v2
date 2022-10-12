@@ -1,8 +1,15 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import {Helmet} from "react-helmet";
+import { useEffect } from "react";
+import { useLocation } from "react-router";
 
 function Preise() {
+
+    const location = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
     return (
      <>
       <Helmet>

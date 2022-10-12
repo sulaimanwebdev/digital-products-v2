@@ -2,8 +2,14 @@ import React from 'react'
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import {Helmet} from "react-helmet";
-
+import { useEffect } from "react";
+import { useLocation } from "react-router";
 const Steuerkanzleien = () => {
+
+    const location = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
   return (
     <>
     <Helmet>
@@ -18,7 +24,7 @@ const Steuerkanzleien = () => {
             <div className="banner-col-tax flex flex-1 flex-col items-center text-center pt-10 lg:items-start lg:pt-40 lg:text-left col-1 xl:ml-[60px] 2xl:ml-[190px]">
                 <div className="banner-col-1-content-tax px-4 lg:max-w-lg">
                     <h1 className="banner-title-tax pt-2 pb-3 text-4xl font-bold max-w-xs mx-auto lg:text-5xl lg:max-w-none lg:pb-6 lg:leading-tight">Ihr Weg zur digitalen Kanzlei</h1>
-                    <p className="banner-description-tax text-[17px] opacity-80  leading">Haben Sie Probleme die richtigen Unterlagen stets vollständig vor
+                    <p className="banner-description-tax text-[17px] opacity-80  leading-8">Haben Sie Probleme die richtigen Unterlagen stets vollständig vor
                         sich
                         zu haben? Führt ein Mitarbeiter Ausfall zu einem regelmäßigen Stillstand? Bleiben die
                         gewünschten Vorteile der Digitalisierung bisher aus?</p>
