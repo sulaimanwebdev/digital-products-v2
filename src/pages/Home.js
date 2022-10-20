@@ -5,16 +5,33 @@ import Slider2 from "../components/Slider2";
 import {Helmet} from "react-helmet";
 import {Link} from 'react-router-dom'
 import Reviews from "../components/Reviews";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useLocation } from "react-router";
 
 function Home() {
-
+    const handleClick = () => {
+        ref.current?.scrollIntoView({behavior: 'smooth'});
+      };
+  
+      
     const location = useLocation();
     useEffect(() => {
-      window.scrollTo(0, 0);
+      if(window.location.href === "http://localhost:3000/#funktionen"){
+        handleClick()
+      }
+      else if(window.location.href === "https://aktenplatz.de/#funktionen"){
+        handleClick()
+      }
+
+      else{
+        window.scrollTo(0, 0);
+      }
+
     }, [location]);
 
+    const ref = useRef(null);
+
+  
     return (
      <>
       <Helmet>
@@ -66,7 +83,7 @@ function Home() {
   
           <section className="sections section-features">
               <div className="heading-container">
-                  <h4 className="heading-title" id="Funktionen"></h4>
+                  <h4 className="heading-title" ref={ref} id="funktionen"></h4>
                   {/* <!-- <h3 className="heading-section-title">Aktenplatz in vier Schritten</h3> --> */}
               </div>
               <div className="features">

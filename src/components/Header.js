@@ -40,7 +40,7 @@ const Header = () => {
               </div>
               <ul  className="main-mobile-menu" id="main-mobile-menu">
                   <li>
-                     <a onClick={addScrollBar} data-scroll href="/#Funktionen">Funktionen</a>
+                     <Link to="/#funktionen"><button onClick={addScrollBar} >Funktionen</button></Link>
                   </li>
                   <li>
                       <a onClick={addScrollBar} data-scroll href="#Vorteile">Vorteile</a>
@@ -88,7 +88,8 @@ const Header = () => {
               <div className="hidden flex-row flex-1 justify-end items-center sm:hidden md:hidden xl:flex">
                   <ul className="main-menu">
                       <li>
-                        <a onClick={addScrollBar} data-scroll href="/#Funktionen">Funktionen</a>
+                      <Link to="/#funktionen"><button onClick={addScrollBar} >Funktionen</button></Link>
+
                       </li>
                       <li>
                           <Link onClick={addScrollBar} to="/preise">Preise</Link>
