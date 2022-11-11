@@ -1,15 +1,19 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Switch from "../components/Switch";
 import {Helmet} from "react-helmet";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "react-router";
 
 function Preise() {
+    const [enabled, setEnabled] = useState(false)
 
     const location = useLocation();
     useEffect(() => {
       window.scrollTo(0, 0);
     }, [location]);
+
+
     return (
      <>
       <Helmet>
@@ -35,7 +39,11 @@ function Preise() {
 
 
 
-
+           <div className="flex items-center gap-3 w-fit mx-auto pb-7">
+            <div>Monthly</div>
+            <Switch enabled={enabled} setEnabled={setEnabled}/>
+            <div>Anually</div>
+           </div>
 
             <div className="main-pricing-flex mx-auto flex items-start  gap-5 mb-20">
 
@@ -136,7 +144,7 @@ function Preise() {
                             className="pricing-title flex items-center justify-center text-xl font-bold  bg-[#FFF2ED] text-orange text-center px-5 py-4">
                             Einzelplatz</div>
                         <div className="w-full px-4">
-                            <div className="text-4xl font-bold opacity-80 mt-5 mb-1">10,00 €</div>
+                            <div className="text-4xl font-bold opacity-80 mt-5 mb-1">{enabled === false ? "10,00 €" : "50,00 €"}</div>
                             <div className="text-[#8D9AA9] text-base">Pro Monat</div>
                             <a href="https://app.Aktenplatz.de/register" target="_blank">
                                 <button
@@ -273,7 +281,7 @@ function Preise() {
                             className="pricing-title flex items-center justify-center text-xl font-bold  bg-[#FFF2ED] text-orange text-center px-5 py-4">
                             Team</div>
                         <div className="w-full px-5">
-                            <div className="text-4xl font-bold opacity-80 mt-5 mb-1">20,00 €</div>
+                            <div className="text-4xl font-bold opacity-80 mt-5 mb-1">{enabled === false ? "20,00 €" : "90,00 €"}</div>
                             <div className="text-[#8D9AA9] text-base">Pro Monat</div>
                             <a href="https://app.Aktenplatz.de/register" target="_blank">
                                 <button
@@ -425,7 +433,7 @@ function Preise() {
                             className="pricing-title flex items-center justify-center text-xl font-bold  bg-[#FFF2ED] text-orange text-center px-5 py-4">
                             Professionell</div>
                         <div className="w-full px-4">
-                            <div className="text-4xl font-bold opacity-80 mt-5 mb-1">60,00 €</div>
+                            <div className="text-4xl font-bold opacity-80 mt-5 mb-1">{enabled === false ? "60,00 €" : "120,00 €"}</div>
                             <div className="text-[#8D9AA9] text-base">Pro Monat</div>
                             <a href="https://app.Aktenplatz.de/register" target="_blank">
                                 <button
