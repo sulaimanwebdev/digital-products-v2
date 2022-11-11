@@ -145,7 +145,7 @@ function Preise() {
                             Einzelplatz</div>
                         <div className="w-full px-4">
                             <div className="text-4xl font-bold opacity-80 mt-5 mb-1">{enabled === false ? "10,00 €" : "50,00 €"}</div>
-                            <div className="text-[#8D9AA9] text-base">Pro Monat</div>
+                            <div className="text-[#8D9AA9] text-base">{enabled === false ? "Per Month" : "Per Year"}</div>
                             <a href="https://app.Aktenplatz.de/register" target="_blank">
                                 <button
                                     className="pricing-btn w-full rounded py-2 mt-7 transition text-orange hover:text-white font-bold">Kostenlos
@@ -282,7 +282,7 @@ function Preise() {
                             Team</div>
                         <div className="w-full px-5">
                             <div className="text-4xl font-bold opacity-80 mt-5 mb-1">{enabled === false ? "20,00 €" : "90,00 €"}</div>
-                            <div className="text-[#8D9AA9] text-base">Pro Monat</div>
+                            <div className="text-[#8D9AA9] text-base">{enabled === false ? "Per Month" : "Per Year"}</div>
                             <a href="https://app.Aktenplatz.de/register" target="_blank">
                                 <button
                                     className="pricing-btn w-full rounded py-2 mt-7 transition text-orange hover:text-white font-bold">Kostenlos
@@ -434,7 +434,7 @@ function Preise() {
                             Professionell</div>
                         <div className="w-full px-4">
                             <div className="text-4xl font-bold opacity-80 mt-5 mb-1">{enabled === false ? "60,00 €" : "120,00 €"}</div>
-                            <div className="text-[#8D9AA9] text-base">Pro Monat</div>
+                            <div className="text-[#8D9AA9] text-base">{enabled === false ? "Per Month" : "Per Year"}</div>
                             <a href="https://app.Aktenplatz.de/register" target="_blank">
                                 <button
                                     className="pricing-btn w-full rounded py-2 mt-7 transition text-orange hover:text-white font-bold">Kostenlos
